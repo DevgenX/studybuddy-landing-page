@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#6366f1" />
+
+  <!-- Open book shape -->
+  <path d="M16 40 L16 22 Q24 18 32 22 Q40 18 48 22 L48 40 Q40 36 32 40 Q24 36 16 40Z" fill="white" opacity="0.95"/>
+  <line x1="32" y1="22" x2="32" y2="40" stroke="#6366f1" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- AI sparkle/star top-right -->
+  <g transform="translate(46,14)" fill="#fbbf24">
+    <path d="M0,-6 L1.5,-1.5 L6,0 L1.5,1.5 L0,6 L-1.5,1.5 L-6,0 L-1.5,-1.5Z"/>
+  </g>
+
+  <!-- Small sparkle -->
+  <g transform="translate(52,24)" fill="#fbbf24">
+    <path d="M0,-3 L0.8,-0.8 L3,0 L0.8,0.8 L0,3 L-0.8,0.8 L-3,0 L-0.8,-0.8Z"/>
+  </g>
+
+  <!-- Friendly eyes on the book -->
+  <circle cx="26" cy="30" r="2" fill="#6366f1"/>
+  <circle cx="38" cy="30" r="2" fill="#6366f1"/>
+  <circle cx="26.7" cy="29.3" r="0.7" fill="white"/>
+  <circle cx="38.7" cy="29.3" r="0.7" fill="white"/>
+
+  <!-- Smile -->
+  <path d="M28 34 Q32 37 36 34" stroke="#6366f1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

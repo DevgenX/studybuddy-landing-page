@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "StudyBuddy — Your AI Study Companion",
   description:
     "StudyBuddy is an AI-powered study companion that lives on your screen, follows your cursor, reads your content, and helps you learn — without breaking your flow.",
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "StudyBuddy — Your AI Study Companion",
     description:
