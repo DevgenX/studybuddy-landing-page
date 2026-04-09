@@ -14,7 +14,7 @@ export default function Hero() {
       </div>
 
       {/* Headline */}
-      <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 max-w-3xl">
+      <h1 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 max-w-3xl">
         Your AI Buddy<br />
         <span className="text-gradient">on Every Screen</span>
       </h1>
@@ -43,37 +43,37 @@ export default function Hero() {
       </div>
 
       {/* Mock screen */}
-      <div className="mt-16 w-full max-w-[780px] h-[420px] relative">
+      <div className="mt-12 sm:mt-16 w-full max-w-[780px] aspect-[780/420] relative">
         <div className="w-full h-full bg-surface border border-indigo-glow rounded-2xl overflow-hidden shadow-[0_40px_120px_rgba(0,0,0,0.6),0_0_0_1px_rgba(99,102,241,0.1)] relative">
 
           {/* Window bar */}
-          <div className="h-9 bg-surface2 border-b border-indigo-glow flex items-center px-3.5 gap-1.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
-            <span className="ml-4 flex-1 h-5 bg-faint rounded-md opacity-60" />
+          <div className="h-7 sm:h-9 bg-surface2 border-b border-indigo-glow flex items-center px-2.5 sm:px-3.5 gap-1.5">
+            <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#ff5f57]" />
+            <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#febc2e]" />
+            <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#28c840]" />
+            <span className="ml-3 sm:ml-4 flex-1 h-4 sm:h-5 bg-faint rounded-md opacity-60" />
           </div>
 
           {/* Content area */}
-          <div className="grid grid-cols-2 gap-4 p-6 h-[calc(100%-36px)]">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 p-3 sm:p-6 h-[calc(100%-28px)] sm:h-[calc(100%-36px)]">
             {[0, 1].map((i) => (
-              <div key={i} className="bg-faint rounded-xl p-5 border border-indigo-glow flex flex-col gap-2.5">
-                <div className="h-2.5 rounded-full bg-accent/35 w-2/5" />
-                <div className="h-2.5 rounded-full bg-white/10 w-11/12" />
-                <div className="h-2.5 rounded-full bg-white/10 w-3/4" />
-                <div className="h-2.5 rounded-full bg-white/10 w-4/5" />
-                <div className="h-2.5 rounded-full bg-white/10 w-1/2" />
+              <div key={i} className="bg-faint rounded-lg sm:rounded-xl p-3 sm:p-5 border border-indigo-glow flex flex-col gap-1.5 sm:gap-2.5">
+                <div className="h-2 sm:h-2.5 rounded-full bg-accent/35 w-2/5" />
+                <div className="h-2 sm:h-2.5 rounded-full bg-white/10 w-11/12" />
+                <div className="h-2 sm:h-2.5 rounded-full bg-white/10 w-3/4" />
+                <div className="h-2 sm:h-2.5 rounded-full bg-white/10 w-4/5" />
+                <div className="h-2 sm:h-2.5 rounded-full bg-white/10 w-1/2" />
               </div>
             ))}
           </div>
 
           {/* Animated buddy */}
-          <div className="absolute w-[54px] h-[54px] buddy-glow animate-buddy-float pointer-events-none z-10">
+          <div className="absolute w-[36px] h-[36px] sm:w-[54px] sm:h-[54px] buddy-glow animate-buddy-float pointer-events-none z-10 hidden sm:block">
             <BuddySVG />
           </div>
 
           {/* Speech bubble */}
-          <div className="absolute bg-surface border border-indigo-glow rounded-xl px-3.5 py-2.5 text-xs text-white/90 shadow-[0_8px_24px_rgba(0,0,0,0.4)] max-w-[190px] leading-snug z-10 animate-speech-float pointer-events-none">
+          <div className="absolute bg-surface border border-indigo-glow rounded-xl px-2.5 py-2 sm:px-3.5 sm:py-2.5 text-[10px] sm:text-xs text-white/90 shadow-[0_8px_24px_rgba(0,0,0,0.4)] max-w-[140px] sm:max-w-[190px] leading-snug z-10 animate-speech-float pointer-events-none hidden sm:block">
             💡 &quot;Mitochondria is the powerhouse of the cell!&quot;
           </div>
         </div>
