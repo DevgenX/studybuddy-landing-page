@@ -1,29 +1,29 @@
-import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
-import Integrations from "@/components/Integrations";
-import Features from "@/components/Features";
-import UseCases from "@/components/UseCases";
-import Pricing from "@/components/Pricing";
-import FAQ from "@/components/FAQ";
-import CTABanner from "@/components/CTABanner";
-import Footer from "@/components/Footer";
+import CursorFollower from "@/components/CursorFollower";
+import MarketingCta from "@/components/MarketingCta";
+import MarketingFaq from "@/components/MarketingFaq";
+import MarketingFeatureSet from "@/components/MarketingFeatureSet";
+import MarketingFooter from "@/components/MarketingFooter";
+import MarketingHero from "@/components/MarketingHero";
+import MarketingHowItWorks from "@/components/MarketingHowItWorks";
+import MarketingNav from "@/components/MarketingNav";
+import MarketingPricing from "@/components/MarketingPricing";
+import MarketingShortcuts from "@/components/MarketingShortcuts";
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <CursorFollower />
+      <MarketingNav />
       <main>
-        <Hero />
-        <HowItWorks />
-        <Integrations />
-        <Features />
-        <UseCases />
-        <Pricing />
-        <FAQ />
-        <CTABanner />
+        <MarketingHero />
+        <MarketingShortcuts />
+        <MarketingHowItWorks />
+        <MarketingFeatureSet />
+        <MarketingPricing />
+        <MarketingFaq />
+        <MarketingCta />
       </main>
-      <Footer />
+      <MarketingFooter />
     </>
   );
 }
