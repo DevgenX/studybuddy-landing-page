@@ -22,19 +22,19 @@ export default function MarketingCta() {
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
             <Link
               href="#pricing"
-              className="button-primary inline-flex items-center rounded-full px-6 py-3 text-sm font-bold transition-all"
+              className="button-primary inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-all sm:w-auto"
             >
               Start free
             </Link>
             <Link
               href="#pricing"
-              className="button-secondary inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold transition-all"
+              className="button-secondary inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all sm:w-auto"
             >
               Compare plans
             </Link>
             <Link
               href="#pricing"
-              className="button-secondary inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold transition-all"
+              className="button-secondary inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all sm:w-auto"
             >
               Contact us for Enterprise
             </Link>

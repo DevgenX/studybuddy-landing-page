@@ -64,8 +64,8 @@ export default function MarketingHero() {
           </div>
         </div>
 
-        <div className="surface-panel relative overflow-hidden rounded-[2rem] p-5">
-          <div className="mb-4 flex items-center justify-between">
+        <div className="surface-panel relative overflow-hidden rounded-[2rem] p-4 sm:p-5">
+          <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
             <div>
               <p className="tiny-kicker">Diwara AI in action</p>
               <h2 className="mt-1 text-xl font-bold text-white">
@@ -77,8 +77,8 @@ export default function MarketingHero() {
             </div>
           </div>
 
-          <div className="monitor-grid relative h-[26rem] overflow-hidden rounded-[1.5rem] border border-white/6 p-4">
-            <div className="absolute left-5 top-5 w-[58%] rounded-[1.4rem] border border-white/8 bg-[#0b1524]/85 p-4">
+          <div className="monitor-grid relative h-[37rem] overflow-hidden rounded-[1.5rem] border border-white/6 p-3 sm:h-[30rem] sm:p-4 lg:h-[26rem]">
+            <div className="absolute left-4 right-4 top-4 rounded-[1.4rem] border border-white/8 bg-[#0b1524]/85 p-4 sm:left-5 sm:right-[38%] sm:top-5">
               <div className="mb-3 h-2.5 w-28 rounded-full bg-accent/25" />
               <div className="space-y-2">
                 <div className="h-2 rounded-full bg-white/8" />
@@ -93,7 +93,7 @@ export default function MarketingHero() {
               </div>
             </div>
 
-            <div className="absolute right-5 top-5 w-[34%] rounded-[1.4rem] border border-white/8 bg-[#08111d]/88 p-4">
+            <div className="absolute left-4 right-4 top-[43%] rounded-[1.4rem] border border-white/8 bg-[#08111d]/88 p-4 sm:left-auto sm:right-5 sm:top-5 sm:w-[34%]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#f87171]" />
                 <span className="h-2 w-2 rounded-full bg-[#fbbf24]" />
@@ -123,7 +123,7 @@ export default function MarketingHero() {
 
             <StudyBuddyCursorTriangle className="absolute left-[47%] top-[43%] h-10 w-9 -rotate-[18deg]" />
 
-            <div className="absolute bottom-5 left-5 right-5 grid gap-3 sm:grid-cols-3">
+            <div className="absolute bottom-4 left-4 right-4 grid gap-3 sm:bottom-5 sm:left-5 sm:right-5 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/8 bg-white/5 px-4 py-3">
                 <div className="tiny-kicker">Ask</div>
                 <p className="mt-1 text-sm text-white/85">

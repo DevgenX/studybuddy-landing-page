@@ -53,10 +53,10 @@ export default function MarketingFaq() {
               className="surface-card overflow-hidden rounded-[1.4rem]"
             >
               <button
-                className="flex w-full items-center justify-between px-6 py-5 text-left text-sm font-semibold text-white transition-colors hover:text-accent2"
+                className="flex w-full items-start justify-between gap-4 px-5 py-5 text-left text-sm font-semibold text-white transition-colors hover:text-accent2 sm:items-center sm:px-6"
                 onClick={() => setOpen(open === index ? null : index)}
               >
-                {q}
+                <span>{q}</span>
                 <span className="ml-4 flex-shrink-0 text-xl text-muted">
                   {open === index ? "-" : "+"}
                 </span>

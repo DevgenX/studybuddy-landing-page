@@ -447,7 +447,7 @@ function VideoDemo() {
   const showLetterbox = phase >= 3;
 
   return (
-    <div className="relative aspect-[4/5] overflow-hidden bg-[#0d1420] sm:aspect-video">
+    <div className="relative min-h-[31rem] overflow-hidden bg-[#0d1420] sm:min-h-0 sm:aspect-video">
       <div className="absolute left-0 right-0 top-0 bottom-[28%] sm:inset-0 sm:right-[34%]">
         <div
           className={`absolute inset-0 transition-all duration-1000 ${
@@ -666,7 +666,7 @@ function ExplainDemo() {
   const isPlaying = phase >= 0;
 
   return (
-    <div className="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#0c1524] via-[#10192a] to-[#091220] sm:aspect-video">
+    <div className="relative min-h-[34rem] overflow-hidden bg-gradient-to-br from-[#0c1524] via-[#10192a] to-[#091220] sm:min-h-0 sm:aspect-video">
       <div className="absolute left-4 right-4 top-4 rounded-[1.6rem] border border-white/8 bg-[#0b1524]/90 p-4 sm:left-6 sm:right-[42%] sm:top-6 sm:p-5">
         <div className="tiny-kicker">Article</div>
         <div className="mt-4 space-y-2">
