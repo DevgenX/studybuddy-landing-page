@@ -77,8 +77,8 @@ export default function MarketingHero() {
             </div>
           </div>
 
-          <div className="monitor-grid relative h-[37rem] overflow-hidden rounded-[1.5rem] border border-white/6 p-3 sm:h-[30rem] sm:p-4 lg:h-[26rem]">
-            <div className="absolute left-4 right-4 top-4 rounded-[1.4rem] border border-white/8 bg-[#0b1524]/85 p-4 sm:left-5 sm:right-[38%] sm:top-5">
+          <div className="monitor-grid relative flex min-h-[38rem] flex-col gap-4 overflow-hidden rounded-[1.5rem] border border-white/6 p-3 sm:min-h-[30rem] sm:p-4 lg:h-[26rem] lg:min-h-0">
+            <div className="relative rounded-[1.4rem] border border-white/8 bg-[#0b1524]/85 p-4 sm:absolute sm:left-5 sm:right-[38%] sm:top-5">
               <div className="mb-3 h-2.5 w-28 rounded-full bg-accent/25" />
               <div className="space-y-2">
                 <div className="h-2 rounded-full bg-white/8" />
@@ -93,7 +93,7 @@ export default function MarketingHero() {
               </div>
             </div>
 
-            <div className="absolute left-4 right-4 top-[43%] rounded-[1.4rem] border border-white/8 bg-[#08111d]/88 p-4 sm:left-auto sm:right-5 sm:top-5 sm:w-[34%]">
+            <div className="relative rounded-[1.4rem] border border-white/8 bg-[#08111d]/88 p-4 sm:absolute sm:left-auto sm:right-5 sm:top-5 sm:w-[34%]">
               <div className="mb-3 flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#f87171]" />
                 <span className="h-2 w-2 rounded-full bg-[#fbbf24]" />
@@ -111,7 +111,7 @@ export default function MarketingHero() {
             </div>
 
             <svg
-              className="pointer-events-none absolute inset-0 h-full w-full"
+              className="pointer-events-none absolute inset-0 hidden h-full w-full sm:block"
               viewBox="0 0 520 420"
               aria-hidden="true"
             >
@@ -121,9 +121,9 @@ export default function MarketingHero() {
               />
             </svg>
 
-            <StudyBuddyCursorTriangle className="absolute left-[47%] top-[43%] h-10 w-9 -rotate-[18deg]" />
+            <StudyBuddyCursorTriangle className="absolute left-[47%] top-[43%] hidden h-10 w-9 -rotate-[18deg] sm:block" />
 
-            <div className="absolute bottom-4 left-4 right-4 grid gap-3 sm:bottom-5 sm:left-5 sm:right-5 sm:grid-cols-3">
+            <div className="relative mt-auto grid gap-3 sm:absolute sm:bottom-5 sm:left-5 sm:right-5 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/8 bg-white/5 px-4 py-3">
                 <div className="tiny-kicker">Ask</div>
                 <p className="mt-1 text-sm text-white/85">

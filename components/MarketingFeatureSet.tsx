@@ -666,8 +666,8 @@ function ExplainDemo() {
   const isPlaying = phase >= 0;
 
   return (
-    <div className="relative min-h-[34rem] overflow-hidden bg-gradient-to-br from-[#0c1524] via-[#10192a] to-[#091220] sm:min-h-0 sm:aspect-video">
-      <div className="absolute left-4 right-4 top-4 rounded-[1.6rem] border border-white/8 bg-[#0b1524]/90 p-4 sm:left-6 sm:right-[42%] sm:top-6 sm:p-5">
+    <div className="relative flex min-h-[34rem] flex-col gap-4 overflow-hidden bg-gradient-to-br from-[#0c1524] via-[#10192a] to-[#091220] p-4 sm:min-h-0 sm:aspect-video sm:block sm:p-0">
+      <div className="relative rounded-[1.6rem] border border-white/8 bg-[#0b1524]/90 p-4 sm:absolute sm:left-6 sm:right-[42%] sm:top-6 sm:p-5">
         <div className="tiny-kicker">Article</div>
         <div className="mt-4 space-y-2">
           <div className="h-2 rounded-full bg-white/10" />
@@ -681,7 +681,7 @@ function ExplainDemo() {
         </div>
       </div>
 
-      <div className="absolute left-4 right-4 top-[42%] rounded-[1.6rem] border border-white/8 bg-[#101a2d]/92 p-4 sm:left-auto sm:right-6 sm:top-6 sm:w-[34%]">
+      <div className="relative rounded-[1.6rem] border border-white/8 bg-[#101a2d]/92 p-4 sm:absolute sm:left-auto sm:right-6 sm:top-6 sm:w-[34%]">
         <div className="tiny-kicker">Copy and explain</div>
         <div className="mt-4 rounded-2xl border border-accent3/20 bg-accent3/10 px-3 py-2 text-xs text-[#f7d48a]">
           Copied text
@@ -699,7 +699,7 @@ function ExplainDemo() {
         )}
       </div>
 
-      <div className="absolute bottom-4 left-4 right-4 grid gap-3 sm:grid-cols-3 sm:left-6 sm:right-6">
+      <div className="relative mt-auto grid gap-3 sm:absolute sm:bottom-4 sm:left-6 sm:right-6 sm:grid-cols-3">
         <div className={`rounded-2xl border px-4 py-3 text-sm ${phase >= 0 ? "border-accent3/20 bg-accent3/10 text-[#f7d48a]" : "border-white/8 bg-white/[0.03] text-white/65"}`}>
           1. Copy the part you do not understand
         </div>
