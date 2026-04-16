@@ -31,8 +31,8 @@ export default function MarketingShortcuts() {
             Open features with a few keys.
           </h2>
           <p className="section-copy mx-auto mt-4 max-w-2xl text-base sm:text-lg">
-            Diwara AI works through shortcuts. Copy or highlight text, press
-            the right keys, and get help right away.
+            These are the default shortcut keys. You can change them in
+            settings and set them however you want.
           </p>
         </div>
 

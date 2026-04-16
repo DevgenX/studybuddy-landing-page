@@ -27,12 +27,12 @@ const controlSurfaces = [
     label: "Shortcuts tab",
     heading: "Global keyboard flows are part of the shipped desktop UX",
     description:
-      "The product exposes configurable shortcuts for push-to-talk, overlay visibility, explain, and explain-with-context. The defaults are already wired into the current panel.",
+      "The product exposes configurable shortcuts for push-to-talk, overlay visibility, explain, and explain-with-context. The current panel shows default bindings, but users can set them however they want.",
     points: [
-      "Ctrl+Alt+Space for push-to-talk",
-      "Ctrl+Alt+C for cursor show or hide",
-      "Ctrl+Shift+E for explain",
-      "Ctrl+Alt+E for explain with context",
+      "Default push-to-talk binding: Ctrl+Alt+Space",
+      "Default show or hide binding: Ctrl+Alt+C",
+      "Default explain binding: Ctrl+Shift+E",
+      "Default explain with context binding: Ctrl+Alt+E",
     ],
   },
   {

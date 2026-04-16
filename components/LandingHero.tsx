@@ -137,7 +137,9 @@ export default function LandingHero() {
                   <div className="triangle-cursor absolute left-[46%] top-[34%] h-10 w-9 -rotate-[18deg] rounded-md" />
 
                   <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/8 bg-white/5 p-3">
-                    <div className="tiny-kicker">Default shortcuts</div>
+                    <div className="tiny-kicker">
+                      Default shortcuts, changeable in settings
+                    </div>
                     <div className="mt-2 flex flex-wrap gap-2 text-[0.72rem] text-white/85">
                       <span className="rounded-full bg-black/25 px-2 py-1">
                         Ctrl+Alt+Space
@@ -148,6 +150,9 @@ export default function LandingHero() {
                       <span className="rounded-full bg-black/25 px-2 py-1">
                         Ctrl+Shift+E
                       </span>
+                    </div>
+                    <div className="mt-2 text-[0.68rem] text-white/55">
+                      Set them however you want.
                     </div>
                   </div>
                 </div>
