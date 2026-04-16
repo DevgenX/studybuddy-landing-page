@@ -92,23 +92,16 @@ const videoSteps = [
 
 const videoQuestion = "How can I make this video more cinematic?".split("");
 const videoWords = [
-  "Start",
-  "with",
+  "Apply",,
   "color",
   "tools,",
-  "apply",
+  "put",
   "a",
   "film",
   "look,",
   "add",
   "cinema",
-  "bars,",
-  "then",
-  "finish",
-  "with",
-  "a",
-  "little",
-  "grain.",
+  "bars",
 ];
 
 const explainWords = [
@@ -382,22 +375,20 @@ function StudyDemo() {
 
 function VideoDemo() {
   const [phase, setPhase] = useState(-1);
-  const [questionIdx, setQuestionIdx] = useState(0);
+  const [questionIdx, setQuestionIdx] = useState(videoQuestion.length - 1);
   const [answerIdx, setAnswerIdx] = useState(0);
-  const questionTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const answerTimer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   function start() {
     setPhase(0);
-    setQuestionIdx(0);
+    setQuestionIdx(videoQuestion.length - 1);
     setAnswerIdx(0);
   }
 
   function reset() {
-    if (questionTimer.current) clearInterval(questionTimer.current);
     if (answerTimer.current) clearInterval(answerTimer.current);
     setPhase(-1);
-    setQuestionIdx(0);
+    setQuestionIdx(videoQuestion.length - 1);
     setAnswerIdx(0);
   }
 
@@ -410,19 +401,8 @@ function VideoDemo() {
 
   useEffect(() => {
     if (phase !== 0) return;
-    questionTimer.current = setInterval(() => {
-      setQuestionIdx((prev) => {
-        if (prev >= videoQuestion.length - 1) {
-          if (questionTimer.current) clearInterval(questionTimer.current);
-          setPhase(1);
-          return prev;
-        }
-        return prev + 1;
-      });
-    }, 45);
-    return () => {
-      if (questionTimer.current) clearInterval(questionTimer.current);
-    };
+    const timeout = setTimeout(() => setPhase(1), 700);
+    return () => clearTimeout(timeout);
   }, [phase]);
 
   useEffect(() => {
@@ -758,8 +738,8 @@ export default function MarketingFeatureSet() {
         <div className="mx-auto mt-12 max-w-5xl">
           <div className="mb-5 flex flex-wrap justify-center gap-2">
             {([
-              { id: "study", label: "Study help" },
-              { id: "video", label: "Video help" },
+              { id: "study", label: "Study Assistant" },
+              { id: "video", label: "Video Editor Assistant" },
               { id: "explain", label: "Copy and explain" },
             ] as const).map(({ id, label }) => (
               <button
