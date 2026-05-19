@@ -1,35 +1,33 @@
-import MarketingNav from '@/components/MarketingNav';
-import MarketingHero from '@/components/MarketingHero';
-import MarketingHowItWorks from '@/components/MarketingHowItWorks';
-import MarketingShortcuts from '@/components/MarketingShortcuts';
-import MarketingFeatureSet from '@/components/MarketingFeatureSet';
-import MarketingStats from '@/components/MarketingStats';
-import MarketingTestimonials from '@/components/MarketingTestimonials';
-import MarketingPricing from '@/components/MarketingPricing';
-import MarketingFaq from '@/components/MarketingFaq';
-import MarketingCta from '@/components/MarketingCta';
-import MarketingGalaxyBackdrop from '@/components/MarketingGalaxyBackdrop';
-import MarketingTeaserVideo from '@/components/MarketingTeaserVideo';
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/sections/Hero";
+import SocialProof from "@/components/sections/SocialProof";
+import Modes from "@/components/sections/Modes";
+import ScreenAwareness from "@/components/sections/ScreenAwareness";
+import AutomationPower from "@/components/sections/AutomationPower";
+import SpacesKnowledge from "@/components/sections/SpacesKnowledge";
+import PersonalChannels from "@/components/sections/PersonalChannels";
+import Integrations from "@/components/sections/Integrations";
+import Governance from "@/components/sections/Governance";
+import CtaBanner from "@/components/sections/CtaBanner";
+import Footer from "@/components/sections/Footer";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="relative bg-[#050b14] overflow-hidden">
-      <MarketingGalaxyBackdrop />
-      <div className="relative z-10">
-        <MarketingNav />
-        <MarketingHero />
-        <div className="bg-[#050b14]">
-          <MarketingTeaserVideo />
-          <MarketingHowItWorks />
-          <MarketingShortcuts />
-          <MarketingFeatureSet />
-          <MarketingStats />
-          <MarketingTestimonials />
-          <MarketingPricing />
-          <MarketingFaq />
-          <MarketingCta />
-        </div>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <SocialProof />
+        <Modes />
+        <ScreenAwareness />
+        <AutomationPower />
+        <SpacesKnowledge />
+        <PersonalChannels />
+        <Integrations />
+        <Governance />
+        <CtaBanner />
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -1,0 +1,108 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Diwara wizard-king book app icon</title>
+  <desc id="desc">A rounded-square fantasy app icon showing an enchanted spellbook with a gold crown and wand bookmark.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="128" y1="96" x2="896" y2="928" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#163B7A"/>
+      <stop offset="0.48" stop-color="#123F64"/>
+      <stop offset="1" stop-color="#0D6B73"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(516 420) rotate(90) scale(380)">
+      <stop offset="0" stop-color="#FFF3A6" stop-opacity="0.46"/>
+      <stop offset="0.52" stop-color="#B77DFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0D6B73" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bookCover" x1="232" y1="356" x2="792" y2="802" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6F42C1"/>
+      <stop offset="0.5" stop-color="#3B4FB2"/>
+      <stop offset="1" stop-color="#1F8A8A"/>
+    </linearGradient>
+
+    <linearGradient id="page" x1="284" y1="438" x2="744" y2="754" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF6D8"/>
+      <stop offset="1" stop-color="#F2DDAA"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="338" y1="166" x2="680" y2="370" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF1A8"/>
+      <stop offset="0.46" stop-color="#F5B93A"/>
+      <stop offset="1" stop-color="#C87917"/>
+    </linearGradient>
+
+    <linearGradient id="wand" x1="704" y1="342" x2="820" y2="654" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE9A3"/>
+      <stop offset="1" stop-color="#CA7D20"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="114" y="134" width="796" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="30"/>
+      <feGaussianBlur stdDeviation="32"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.025 0 0 0 0 0.041 0 0 0 0 0.087 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+
+    <filter id="glow" x="151" y="106" width="722" height="762" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 1 0 0 0 0 0.82 0 0 0 0 0.28 0 0 0 0.45 0"/>
+      <feBlend in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="224" fill="url(#halo)"/>
+
+  <g opacity="0.32">
+    <circle cx="228" cy="232" r="5" fill="#FFF4B8"/>
+    <circle cx="820" cy="234" r="6" fill="#FFF4B8"/>
+    <circle cx="146" cy="604" r="4" fill="#D7F8FF"/>
+    <circle cx="856" cy="724" r="5" fill="#D7F8FF"/>
+    <circle cx="308" cy="820" r="5" fill="#FFF4B8"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <path d="M514 360C430 302 306 319 228 374V742C302 689 423 671 514 730C605 671 726 689 800 742V374C722 319 598 302 514 360Z" fill="url(#bookCover)"/>
+    <path d="M514 394C438 344 336 352 276 392V698C342 662 442 652 514 704C586 652 686 662 752 698V392C692 352 590 344 514 394Z" fill="url(#page)"/>
+    <path d="M514 394V704" stroke="#D9BC7A" stroke-width="16" stroke-linecap="round"/>
+    <path d="M306 448C364 421 436 421 488 452" stroke="#D6B66D" stroke-width="13" stroke-linecap="round"/>
+    <path d="M306 514C364 487 436 487 488 518" stroke="#D6B66D" stroke-width="13" stroke-linecap="round"/>
+    <path d="M306 580C364 553 436 553 488 584" stroke="#D6B66D" stroke-width="13" stroke-linecap="round"/>
+    <path d="M538 452C590 421 662 421 720 448" stroke="#D6B66D" stroke-width="13" stroke-linecap="round"/>
+    <path d="M538 518C590 487 662 487 720 514" stroke="#D6B66D" stroke-width="13" stroke-linecap="round"/>
+    <path d="M538 584C590 553 662 553 720 580" stroke="#D6B66D" stroke-width="13" stroke-linecap="round"/>
+    <path d="M228 374C306 319 430 302 514 360V730C423 671 302 689 228 742V374Z" fill="#2E247D" fill-opacity="0.16"/>
+    <path d="M800 374C722 319 598 302 514 360V730C605 671 726 689 800 742V374Z" fill="#0B7C78" fill-opacity="0.12"/>
+    <path d="M228 374C306 319 430 302 514 360C598 302 722 319 800 374" stroke="#FFE6A3" stroke-width="18" stroke-linecap="round"/>
+    <path d="M228 742C302 689 423 671 514 730C605 671 726 689 800 742" stroke="#1B2554" stroke-width="22" stroke-linecap="round" opacity="0.35"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M354 328L386 208L472 292L512 170L552 292L638 208L670 328H354Z" fill="url(#gold)"/>
+    <path d="M358 328H666L642 378H382L358 328Z" fill="#D88D1F"/>
+    <path d="M392 330L414 250L474 310L512 202L550 310L610 250L632 330" stroke="#FFF2B7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.74"/>
+    <circle cx="386" cy="208" r="22" fill="#FFF1A8"/>
+    <circle cx="512" cy="170" r="24" fill="#FFF1A8"/>
+    <circle cx="638" cy="208" r="22" fill="#FFF1A8"/>
+    <path d="M382 378H642" stroke="#FFE7A1" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M706 352L770 664" stroke="url(#wand)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M756 654L807 622L780 718L756 654Z" fill="#B94C7B"/>
+    <path d="M708 338L724 374M690 366L742 346M680 324L734 390" stroke="#FFF1A8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="706" cy="352" r="24" fill="#FFF0A6"/>
+  </g>
+
+  <g>
+    <path d="M210 304L222 336L256 348L222 360L210 392L198 360L164 348L198 336L210 304Z" fill="#FFF2AB"/>
+    <path d="M834 420L846 452L880 464L846 476L834 508L822 476L788 464L822 452L834 420Z" fill="#FFF2AB"/>
+    <path d="M732 164L742 190L770 200L742 210L732 236L722 210L694 200L722 190L732 164Z" fill="#D5F9FF"/>
+    <path d="M282 760L292 786L320 796L292 806L282 832L272 806L244 796L272 786L282 760Z" fill="#D5F9FF"/>
+  </g>
+</svg>

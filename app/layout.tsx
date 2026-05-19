@@ -1,46 +1,40 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-inter",
   display: "swap",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-ibm-plex-mono",
-  weight: ["400", "500", "600"],
-  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Diwara | Voice-command your desktop workflow",
+  title: "Diwara — Your Screen. Your AI. Your Rules.",
   description:
-    "Diwara is a desktop AI companion that can act on your computer, navigate instantly, annotate the screen, research, run flashcard sessions, start practice exams, save presets, and replay study sessions.",
-  icons: {
-    icon: "/icon.svg",
-  },
+    "Screen-aware AI desktop assistant with Ask, Guide, and Auto modes. Automate anything you can see — browser, desktop, and beyond.",
   openGraph: {
-    title: "Diwara | Voice-command your desktop workflow",
+    title: "Diwara — Your Screen. Your AI. Your Rules.",
     description:
-      "Voice-command actions, instant navigation, live annotations, research, coding help, presets, exams, replay, and multi-monitor study workflows in one desktop assistant.",
+      "Screen-aware AI with Ask, Guide, and Auto modes. Local-first, privacy by default.",
     type: "website",
   },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${spaceGrotesk.variable} ${ibmPlexMono.variable}`}
-    >
-      <body className="antialiased">{children}</body>
+    <html lang="en" data-theme="dark" className={inter.variable}>
+      <head>
+        <meta name="theme-color" content="#0f1012" />
+      </head>
+      <body className="font-sans bg-app-bg text-text-primary antialiased">
+        {children}
+      </body>
     </html>
   );
 }
